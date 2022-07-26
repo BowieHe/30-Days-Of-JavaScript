@@ -99,4 +99,8 @@ for(let i = 0; i < names.length; i++) {
 console.log(mernStack)
 console.log(stackNames)
 
+console.log(mernStack[0])
+console.log(Object.entries(mernStack[0]))
+console.log(Object.values(stackNames))
+
 alert(`People ${stackNames.join(",")} is MERN stack developer`)

@@ -14,9 +14,61 @@
 	</div>
 
 
+	<button>
+		click me
+	</button>
 
+	<script>
+		const button = document.querySelector('button')
+		button.addEventListener('mouseenter', e => {
+			console.log("give the event listener", e)
+			console.log('e.target', e.target.textContent)
+		})
+	</script>
+
+	<div></div>
 	<script src="./scripts/main.js"></script>
 
+	<button onclick="clickMe()">onClick me</button>
+	<script>
+		const clickMe = () => {
+			alert("test alert")
+		}
+	</script>
+
+	<div></div>
+
+	<input type="text" id="mass" placeholder="Mass in Kilogram" />
+	<input type="text" id="height" placeholder="Height in meters" />
+	<button onclick="calBMI()">Calculate BMI</button>
+
+	<script>
+		const mass = document.querySelector('#mass')
+		const height = document.querySelector('#height')
+		const button1 = document.querySelector('button')
+
+		const calBMI = () => {
+			let bmi = mass.value / height.value ** 2
+			alert(`your bmi is ${bmi.toFixed(2)}`)
+			console.log(bmi)
+		}
+	</script>
+
+	<div></div>
+
+	<input type="text" id="mass" placeholder="say something" />
+    <p></p>
+
+    <script>
+        const input = document.querySelector('input')
+        const p = document.querySelector('p')
+
+        input.addEventListener('blur', (e) => {
+            p.textContent = 'Field is required'
+            p.style.color = 'red'
+
+        })
+    </script>
 </body>
 
 </html>

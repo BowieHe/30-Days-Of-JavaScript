@@ -12,11 +12,41 @@
 	<div class="wrapper">
 
 	</div>
+	<script>
+		let title = document.createElement('h4')
+		title.className = 'title'
+		title.style.fontSize = '30px'
+		title.textContent = 'test title DOM day 2'
+		console.log(title)
+	</script>
 
-
+	<script>
+		for(let i = 0; i < 3; i++) {
+			title = document.createElement('h5')	
+			title.className = 'title'
+			title.style.fontSize = '40px'
+			title.textContent = i
+			console.log(title)
+		}
+	</script>
 
 	<script src="./scripts/main.js"></script>
 
+	<ul>
+        <li>30DaysOfPython Challenge Done</li>
+        <li>30DaysOfJavaScript Challenge Done</li>
+        <li>30DaysOfReact Challenge Coming</li>
+        <li>30DaysOfFullStack Challenge Coming</li>
+        <li>30DaysOfDataAnalysis Challenge Coming</li>
+        <li>30DaysOfReactNative Challenge Coming</li>
+        <li>30DaysOfMachineLearning Challenge Coming</li>
+    </ul>
+
+	<script>
+		const ul = document.querySelector('ul')
+		console.log(ul)
+		ul.innerHTML = ''
+	</script>
 </body>
 
 </html>
